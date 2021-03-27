@@ -12,7 +12,7 @@ node {
             sh "mvn package"
         }
     } finally {
-        junit 'build/reports/**/*.xml'
+        junit 'target/**/*.xml'
     }
   }
   // you should add a test report here
